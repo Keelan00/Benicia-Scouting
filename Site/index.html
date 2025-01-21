@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Site Designed By Troop 7 Scouts
+  ________   ____    ______  ______  ____       ______  ______  ______
+ /________/ /  _ \  / __  / / __  / /  _ \     / __  / / __  / /___  /
+   / /     /  ___/ / / / / / / / / /  ___/    / / / / / / / /     / /
+  / /     / / \   / /_/ / / /_/ / / /        / /_/ / / /_/ /    / /
+ /_/     /_/ \_\ /_____/ /_____/ /_/        /_____/ /_____/   /_/
+-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Benicia Scouting</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><img src="images/TheBeniciaScouts.png"img></a></li>
+        </ul>
+    </nav>
+<div class="padding">
+    <div class="row">
+        <div class="rightcolumn">
+                <div class="card">
+                    <h1>Welcome to Benicia Scouting</h1>
+                    <div class="logo-align">
+                        <img id="ScoutLogo1" src="images/Scoutlogo.png" alt="Scouting logo"img>
+                    </div>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <img src="images/slide1.png" style="width:100%">
+                        </div>
+              
+                        <div class="mySlides fade">
+                            <img src="images/slide2.png" style="width:100%">
+                        </div>
+              
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+              
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+              
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+              
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
+
+                    <p style="text-align: center;">We provide information about scouting organizations in town, as well as links to other scouting resources, both local and national.</p>
+                    <h2 style="text-align: center;">Benicia Units</h2>
+                    <div class="center-content">
+                        <a href="https://pack108.beniciascouts.org/"><button class="blue-button">Cub Scout Pack 108</button></a>
+                        <a href="https://troop007benicia.org/"><button class="blue-button">Boy Scout Troop 7</button></a>
+                        <a href="https://troop8.beniciascouts.org/"><button class="blue-button">Boy Scout Troop 8</button></a>
+                        <a href="https://sites.google.com/view/troop-7009-benicia-ca/"><button class="blue-button">Scout BSA Troop 9 (Girls)</button></a>
+                    </div>
+                    <br>
+                </div>
+                
+                <div class="card">
+                    <h2>Serving the Community</h2>
+                    <a href="https://www.flagmapper.com/Orgs/Register.php?OrgDir=beniciascouts&FormDefID=1004"><img class="Treebutton" src="images/Tree recycle.png" alt="Christmas Tree Recycling"></a>
+                    <p>Since 1989, Benicia's Cub Scouts, Scouts BSA, and Venture Crew BSA units recycle Christmas trees as a community service project and fundraiser. This project is run in full cooperation with the City of Benicia and Republic Services. The trees are chipped, and used for ground cover on City properties. Please take advantage of our convenient service.</p>
+                    <h3>We made a film about Christmas Tree Recycling! Check it out!</h3>
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; width: 100%; background: #000;">
+                        <iframe src="https://www.youtube.com/embed/HKWbeZMqjW0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                      </div>
+                      
+                    <p>Benicia Scouts would like to thank the following organizations for their generous donations as the current sponsors of the Christmas Tree recycling program:</p>
+                    <ul>
+                        <li>Valero Benicia Refinery
+                        <li>A-1 Guaranteed Heating and Air
+                        <li>Benicia Lions Club
+                        <li>We Do Odd Jobs
+                        <li>Benicia Plumbing
+                        <li>AAA Care Care Center, Vacaville
+                        <li>Joe's Junk Removal
+                        <li>F3 and Assocites
+                        <li>Delta Landscaping
+                        <li>Coldwell Banker, Solano Pacific
+                        <li>St. John Land Consulting
+                        <li>Up2Code Plumbing
+                        <li>BPX Pringing & Graphics
+                        <li>Nourot Art Glass
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Support Benicia Scouting</h2>
+                <a href="https://secure.itransact.com/cgi-bin/mas/split.cgi?vendor_id=9D-7EFcZ6saTZnb0Zi4&mername=BSA%20Christmas%20Tree%20Recycling%20Program&ret_addr=https://secure.paymentclearing.com/h/cp/transactions/receipts&showaddr=1&showcvv=1&total_input=1&total_input_desc=Donation%20to%20Benicia%20Scouts%20Christmas%20Tree%20Recycling%20Program&first_name=&last_name=&address=&city=&state=&zip=&country=USA&phone=&email=&lookup=first_name&lookup=last_name&lookup=address&lookup=city&lookup=state&lookup=zip&lookup=country&lookup=phone&lookup=email&lookup=authcode&lookup=total&lookup=test_mode&lookup=when&lookup=xid&lookup=avs_response&lookup=confemail&passback=receipt_tpl&lookup=cc_last_four&lookup=cc_name&receipt_tpl=m2&passback=mername&disable_checks=1&ret_mode=post"><button class="yellow-button">Donate</button></a>
+            </div>
+
+            <div class="card">
+                <h2>Links:</h2>
+                    <a href="https://ggacbsa.org/"><button class="red-button">Golden Gate Area Council</button></a>
+                    <a href="https://www.scouting.org/"><button class="red-button">Scouting America</button></a>
+                    <a href="https://scoutbook.scouting.org/"><button class="red-button">Scoutbook</button></a>
+            </div>
+            
+            <div class="card">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com/thebeniciascouts/" class="fa"><img src="images/facebook-brands-solid.png" alt="Facebook"> Benicia Scouts</a>
+                <a href="https://www.instagram.com/thebeniciascouts/" class="fa"><img src="images/instagram-brands-solid.png" alt="instagram"> Benicia Scouts</a>
+                <a href="https://www.facebook.com/people/Benicia-BSA-Scout-Troop-7/100081279072251/" class="fa"><img src="images/facebook-brands-solid.png" alt="Facebook"> Troop 7</a>
+                <a href="https://www.facebook.com/BeniciaTroop8" class="fa"><img src="images/facebook-brands-solid.png" alt="Facebook"> Troop 8</a>
+                
+                <a href="https://us7.campaign-archive.com/home/?u=0e5c96caa8d73eaef2a100a30&id=f570dbc38c"><button class="red-button">Check Out Our Mailing List</button></a>
+            </div>
+
+            <div class="card">
+                <h2>Questions?</h2>
+                <a href="mailto:trees@beniciascouts.org"><button class="light-blue-button">Contact us</button></a>
+            </div>
+
+            <!-- Ads Section --> 
+             <br>
+            <div class="ad-card">
+                <a href="https://www.valero.com/responsibility/volunteerism" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_Benicia_Refinery_stacked_logo.jpg" alt="beniciascouts_Benicia_Refinery_stacked_logo.jpg"></a>
+                <a href="https://3eyemedia.com/" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_Black_and_Gold_Modern_Business_Email_Signature_[2].png" alt="beniciascouts_Black_and_Gold_Modern_Business_Email_Signature_[2].png"></a>
+                <a href="https://www.facebook.com/junkremoval707" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_jesses.jpeg" alt="beniciascouts_jesses.jpeg"></a>
+                <a href="https://a-1guaranteed.com/" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_A-1_Guaranteed_color_logo_09.jpg" alt="beniciascouts_A-1_Guaranteed_color_logo_09.jpg"></a>
+                <a href="https://www.beniciaplumbing.com/contact-us/" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_BenPlumbing_300X250_web.jpeg" alt="beniciascouts_BenPlumbing_300X250_web.jpeg"></a>
+                <a href="http://www.esteyrealestate.com" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_unnamed_[2].png" alt="beniciascouts_unnamed_[2].png"></a>
+                <a href="https://www.facebook.com/BeniciaLionsClub" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_download.jpeg" alt="beniciascouts_download.jpeg"></a>
+                <a href="http://www.stjohnsurveys.com" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_IMG_378111111.JPG" alt="beniciascouts_IMG_378111111.JPG"></a>
+                <a href="https://www.nourot.com/shopnourotonline.html" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_nourot.artglass.jpg" alt="beniciascouts_nourot.artglass.jpg"></a>
+                <a href="https://careers-undergroundconstruction.icims.com/" target="_blank"><img src="https://www.flagmapper.com/downloads/beniciascouts_Underground_Construction_Transparent.png" alt="beniciascouts_Underground_Construction_Transparent.png"></a>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+<tr>
+    <p style="margin-top: 0; margin-bottom: 0"></p>
+    <p align="center">
+    <font face="Verdana" size="2">
+    beniciascouts.org | Benicia, California
+    <Br>
+    Designed by Benicia Scouts<br>
+    <font face="Arial" size="2" color="#FFFFFF">&nbsp;</font>
+    © 2019/2020 BeniciaScouts.org
+    </font>
+
+    
+</body>
+</html>
