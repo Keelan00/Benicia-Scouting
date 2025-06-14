@@ -220,7 +220,8 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-bottom: 5px;
     width: 100%;
-    max-width: 300px;
+    max-width: 200px; 
+    min-width: 200px;
 }
 
 .light-blue-button:hover {
@@ -365,4 +366,20 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
+}
+
+.fb-responsive-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* optional max width */
+  aspect-ratio: 4 / 5; /* approximate ratio of 500x628 */
+  margin: 0 auto;
+  }
+
+.fb-responsive-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
 }
